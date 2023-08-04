@@ -9,6 +9,8 @@ install library for ursina<br>
 ``` pip install ursina ```<br>
 Run the Python File<br>
 ``` Python solar.py ```<br>
-
-
+# OUTPUT
+![hlw](https://github.com/aayushdangol16/solar_cg/blob/main/hlw.jpg) <br>
+![hlw1](https://github.com/aayushdangol16/solar_cg/blob/main/hlw1.jpg) <br>
+![hlw2](https://github.com/aayushdangol16/solar_cg/blob/main/hlw2.jpg) <br>
 
