@@ -3,6 +3,12 @@ import math
 import random
 
 app = Ursina()
+camera = EditorCamera()
+
+def update():
+    # Rotate the camera based on mouse input
+    camera.rotation_y += held_keys['right mouse'] * mouse.delta[0] * 100
+    camera.rotation_x -= held_keys['right mouse'] * mouse.delta[1] * 100
 
 # Set the background color to black
 window.color = color.black
@@ -11,7 +17,7 @@ window.color = color.black
 stars = []
 num_stars = 7000
 for _ in range(num_stars):
-    star = Entity(model='sphere', scale=random.uniform(0.01, 0.01), position=(random.uniform(-50, 50), random.uniform(-50, 50), random.uniform(-50, 50)), color=color.white)
+    star = Entity(model='sphere', scale=random.uniform(0.04, 0.04), position=(random.uniform(-50, 50), random.uniform(-50, 50), random.uniform(-50, 50)), color=color.white)
     stars.append(star)
 
 # Create the Sun
